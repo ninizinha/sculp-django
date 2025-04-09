@@ -1,0 +1,243 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'static/css/estiloport.css' %}">
+<link rel="stylesheet" href="{% static 'static/css/responsivo.css' %}">
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCULP - As melhores tattoos</title>
+
+  <!-- Fontes e ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&family=Raleway:wght@100..900&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/static/css/reset.css" />
+  <link rel="stylesheet" href="/static/css/estilosport.css" />
+  <link rel="stylesheet" href="/static/css/responsivo.css" />
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    <a href="#informacoes1">
+      <h1 class="logo">S</h1>
+    </a>
+    <div class="container-foto">
+      <div class="foto sombra-interna">
+        <img src="/static/imagens/Picsart_24-03-25_19-07-41-739.png" alt="Logo SCULP" />
+      </div>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#projetos">Tatuagens</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Slideshow -->
+  <section class="home">
+    <div class="slideshow">
+      <div class="slide"><img src="/static/imagens/tatuagem1.png" alt="Slide 1"></div>
+      <div class="slide"><img src="/static/imagens/tatuagem2 (2).png" alt="Slide 2"></div>
+      <div class="slide"><img src="/static/imagens/tatuagem3.jpg" alt="Slide 3"></div>
+    </div>
+  </section>
+
+  <!-- Informações -->
+  <section id="informacoes1" class="informacoes">
+    <h1>Encontre aqui a tattoo perfeita!</h1>
+    <p>Descubra primeiro e depois faça de verdade. 😁</p>
+    <p>Reunimos em um só lugar as tattoos temporárias mais maneiras, confere tudo 💜</p>
+    <p>Viu tudo e quer mais inspirações?! Acesse abaixo:</p>
+    <ul class="redes-sociais">
+      <li>
+        <a href="https://pin.it/3jNRNck0K" title="Ir para o Pinterest" target="_blank">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/tatuagem.top?igsh=MWN4OXl5OTZvenlhaw==" title="Ir para o Instagram" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+    <h2>Mas o que são tatuagens temporárias?</h2>
+    <p>
+      Tatuagens temporárias são uma alternativa semipermanente às tatuagens permanentes, aplicadas na pele com adesivos
+      especiais. São usadas para experimentar designs de tatuagem sem o compromisso de longo prazo.
+    </p>
+  </section>
+
+  <!-- Seção de tatuagens -->
+  <section class="projetos" id="projetos">
+    <h2 class="titulo">Tatuagens</h2>
+    <div class="searchBox">
+      <input class="searchInput" type="text" id="searchInput" placeholder="Buscar algo..." />
+      <button class="searchButton" id="searchButton">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+
+    <!-- Lista de projetos -->
+    <div class="container-projetos" id="resultsContainer">
+      <div class="projeto ativo">
+        <a href="https://shopee.com.br/product/1006215031/25917989146" target="_blank">
+          <img src="/static/imagens/tattoo01.png" alt="Tattoo aranha" />
+          <div class="tattoo-item">
+            <h3>Tatuagem Aranha</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="projeto ativo">
+        <a href="https://shopee.com.br/Adesivos-Temporários-Coração" target="_blank">
+          <img src="./src/imagens/tattoo02.png" alt="Tatuagem coração" />
+          <div class="tattoo-item">
+            <h3>Tatuagem Coração Y2k</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="projeto ativo">
+        <a href="https://shopee.com.br/Tatuagem-Borboleta" target="_blank">
+          <img src="./src/imagens/tattoo04.png" alt="Tatuagem Borboleta" />
+          <div class="tattoo-item">
+            <h3>Tatuagem Borboleta</h3>
+          </div>
+        </a>
+      </div>
+   
+    <div class="projeto ativo">
+      <a href="https://shopee.com.br/Adesivos-Tempor%C3%A1rios-Para-Tatuagem-Da-Sereia-M%C3%A1gica-De-Longa-Dura%C3%A7%C3%A3o-%C3%80-Prova-D'%C3%A1gua-Dura-At%C3%A9-15-Dias-De-Falsa-semi-Permanente-.-i.859352639.23161897930?sp_atk=a73d1633-aaa6-436a-8186-6f9271d64b25&xptdk=a73d1633-aaa6-436a-8186-6f9271d64b25" target="_blank">
+        <img src="./src/imagens/tattoo11.png" alt="Tatuagem Sereia" />
+        <div class="tattoo-item">
+          <h3>Tatuagem Sereia</h3>
+        </div>
+      </a>
+    </div>
+    
+    <div class="projeto ativo">
+      <a href="https://shopee.com.br/Simula%C3%A7%C3%A3o-de-Adesivo-de-Tatuagem-%C3%A0-prova-d'%C3%A1gua-de-longa-dura%C3%A7%C3%A3o-M%C3%A1scara-de-Camuflagem-Tempor%C3%A1ria-N%C3%A3o-Refletiva-de-Tatuagem-Falsa-Padr%C3%A3o-de-M%C3%A1scara-i.1006215031.25858743781?sp_atk=8856392c-2944-4e93-8acc-eb053af378b0&xptdk=8856392c-2944-4e93-8acc-eb053af378b0" target="_blank">
+        <img src="./src/imagens/tattoo12.png" alt="Tatuagem Máscaras" />
+        <div class="tattoo-item">
+          <h3>Tatuagem Máscaras</h3>
+        </div>
+      </a>
+    </div>
+    
+    <div class="projeto ativo">
+      <a href="https://shopee.com.br/Adesivo-de-Tatuagem-Tempor%C3%A1ria-N%C3%A3o-Reflexiva-%C3%A0-prova-d'%C3%A1gua-de-15-dias-de-longa-dura%C3%A7%C3%A3o-Tatuagem-Tempor%C3%A1ria-Tatuagem-Geom%C3%A9trica-Colorida-Padr%C3%A3o-de-B%C3%BAssola-Falsas-Tatuagens-i.1006215031.25407179628?sp_atk=1516ea7e-86f8-4663-83e7-e5cfd49bb3cd&xptdk=1516ea7e-86f8-4663-83e7-e5cfd49bb3cd" target="_blank">
+        <img src="./src/imagens/tattoo13.png" alt="Tatuagem Bússola" />
+        <div class="tattoo-item">
+          <h3>Tatuagem Bússola</h3>
+        </div>
+      </a>
+    </div>
+    
+    <div class="projeto ativo">
+      <a href="https://shopee.com.br/Adesivos-Tempor%C3%A1rios-De-Tatuagem-De-Cobra-Pintados-%C3%80-M%C3%A3o-M%C3%A1gica-De-Longa-Dura%C3%A7%C3%A3o-Prova-D'%C3%A1gua-Dura-At%C3%A9-15-Dias-Falsa-semi-Permanente-.-i.859352639.25352292717?sp_atk=66e3d113-2386-4e61-b87a-6d2bc72356a5&xptdk=66e3d113-2386-4e61-b87a-6d2bc72356a5" target="_blank">
+        <img src="./src/imagens/tattoo05.png" alt="Tatuagem Cobra" />
+        <div class="tattoo-item">
+          <h3>Tatuagem Cobra</h3>
+        </div>
+      </a>
+    </div>
+    
+    <div class="projeto ativo">
+      <a href="https://shopee.com.br/1-Folha-Tatuagem-Tempor%C3%A1ria-Do-Drag%C3%A3o-%C3%81guia-Tigre-Cr%C3%A2nio-Rei-Animal-Falsa-Autocolante-i.1006215031.25518682209?sp_atk=f4a878d7-f69e-43a7-a07f-1e6d712a7dad&xptdk=f4a878d7-f69e-43a7-a07f-1e6d712a7dad" target="_blank">
+        <img src="./src/imagens/tattoo06.png" alt="Tatuagem Dragão" />
+        <div class="tattoo-item">
+          <h3>Tatuagem Dragão</h3>
+        </div>
+      </a>
+    </div>
+    
+    <div class="projeto ativo">
+      <a href="https://shopee.com.br/Adesivos-de-Tatuagem-%C3%A0-prova-d'%C3%A1gua-de-longa-dura%C3%A7%C3%A3o-Simula%C3%A7%C3%A3o-de-Tatuagem-Tempor%C3%A1ria-N%C3%A3o-Refletiva-Padr%C3%A3o-de-Tatuagem-Tempor%C3%A1ria-Homens-Mulheres-Tatuagens-Falsas-i.1006215031.25708742918?sp_atk=c3cebc06-5951-4638-9c97-cc7d645ca649&xptdk=c3cebc06-5951-4638-9c97-cc7d645ca649" target="_blank">
+        <img src="./src/imagens/tattoo07.png" alt="Tatuagem Carpas" />
+        <div class="tattoo-item">
+          <h3>Tatuagem Carpas</h3>
+        </div>
+      </a>
+    </div>
+    <div class="projeto ativo">
+      <a href="https://shopee.com.br/Tatuagem-Remov%C3%ADvel-Rosas-Flores-Muito-Linda-Tempor%C3%A1ria-XQB-265-i.426649050.13564681456?sp_atk=a415a42d-2fe7-4956-8872-d288e19de7a9&xptdk=a415a42d-2fe7-4956-8872-d288e19de7a9" target="_blank">
+        <img src="./src/imagens/tattoo33.png" alt="Tatuagem Rosas" />
+        <div class="tattoo-item">
+          <h3>Tatuagem Rosas</h3>
+        </div>
+      </a>
+    </div>
+    
+    <div class="projeto ativo">
+      <a href="https://shopee.com.br/Tatuagem-Fake-Casal-Le%C3%A3o-Leoa-Flores-Tattoo-3D-i.287679232.14796127727?sp_atk=7d493815-ac46-4d21-9d62-7340e653537c&xptdk=7d493815-ac46-4d21-9d62-7340e653537c" target="_blank">
+        <img src="./src/imagens/tattoo34.png" alt="Tatuagem Leão e Leoa" />
+        <div class="tattoo-item">
+          <h3>Tatuagem Leão e Leoa</h3>
+        </div>
+      </a>
+    </div>
+    
+    <div class="projeto ativo">
+      <a href="https://shopee.com.br/1-Folha-De-Flor-De-P%C3%AAssego-Tatuagem-Tempor%C3%A1ria-%C3%80-Prova-D'%C3%A1gua-i.1006215031.24168684980?sp_atk=a806d419-9577-4b48-a10e-4f3d5840583f&xptdk=a806d419-9577-4b48-a10e-4f3d5840583f" target="_blank">
+        <img src="./src/imagens/tattoo35.png" alt="Tatuagem Flor de Pêssego" />
+        <div class="tattoo-item">
+          <h3>Tatuagem Flor de Pêssego</h3>
+        </div>
+      </a>
+    </div>
+    
+    <div class="projeto ativo">
+      <a href="https://shopee.com.br/Tatuagem-Tempor%C3%A1ria-%C3%80-Prova-D'%C3%A1gua-Linha-De-Adesivos-Lace-Henna-Totem-Peony-Rose-Flash-Tatuagens-Mulheres-Homens-Sexy-Arte-Corporal-Do-Bra%C3%A7o-Falsas-i.1006215031.24974104920?sp_atk=6c5036cd-9546-4057-9ba3-bb567662fa6b&xptdk=6c5036cd-9546-4057-9ba3-bb567662fa6b" target="_blank">
+        <img src="./src/imagens/tattoo36.png" alt="Tatuagem Mosaico Borboleta" />
+        <div class="tattoo-item">
+          <h3>Tatuagem Mosaico Borboleta</h3>
+        </div>
+      </a>
+    </div>
+    
+    <div class="projeto ativo">
+      <a href="https://shopee.com.br/Tatuagem-Tempor%C3%A1ria-3-pe%C3%A7as-Rosa-Serpente-Adesivo-T5467-i.490371363.14001011124?sp_atk=e3474ead-4f3b-48e9-a42a-8266fc8eeef7&xptdk=e3474ead-4f3b-48e9-a42a-8266fc8eeef7" target="_blank">
+        <img src="./src/imagens/tattoo37.png" alt="Tatuagem Rosa e Cobra" />
+        <div class="tattoo-item">
+          <h3>Tatuagem Rosa e Cobra</h3>
+        </div>
+      </a>
+    </div>
+    
+    <div class="projeto ativo">
+      <a href="https://shopee.com.br/Tatuagem-Tempor%C3%A1ria-VR07-Cora%C3%A7%C3%A3o-14x21-cm-i.415095417.15649453112?sp_atk=3359ae2c-985f-42fb-acf7-cb2d74597f32&xptdk=3359ae2c-985f-42fb-acf7-cb2d74597f32" target="_blank">
+        <img src="./src/imagens/tattoo38.png" alt="Tatuagem Coração" />
+        <div class="tattoo-item">
+          <h3>Tatuagem Coração</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+    
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('searchButton').addEventListener('click', function () {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const items = document.querySelectorAll('.container-projetos .projeto');
+
+      items.forEach(item => {
+        const title = item.querySelector('h3').textContent.toLowerCase();
+        if (title.includes(query)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

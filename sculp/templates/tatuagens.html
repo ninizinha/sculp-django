@@ -1,0 +1,10 @@
+<h1>Tatuagens Temporárias</h1>
+<ul>
+    {% for item in tatuagens %}
+        <li>
+            <img src="{{ item.imagem }}" alt="{{ item.nome }}" width="100">
+            <p>{{ item.nome }} - R$ {{ item.preco }}</p>
+            <a href="{{ item.link }}" target="_blank">Ver no site</a>
+        </li>
+    {% endfor %}
+</ul>
