@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-_$2oq4!)1m%6!!%ngv&58eg0s99&5&z!=@u^pym+jhbj&%pe7n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sculp-django.onrender.com']
 
 
 # Application definition
