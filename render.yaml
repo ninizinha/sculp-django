@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: sculp-django
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
+    startCommand: gunicorn projeto_sculp.wsgi:application
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        value: "django-insecure-_$2oq4!)1m%6!!%ngv&58eg0s99&5&z!=@u^pym+jhbj&%pe7n"

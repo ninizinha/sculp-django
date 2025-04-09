@@ -23,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_$2oq4!)1m%6!!%ngv&58eg0s99&5&z!=@u^pym+jhbj&%pe7n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
+
 
 ALLOWED_HOSTS = ['sculp-django.onrender.com', 'localhost', '127.0.0.1']
 
