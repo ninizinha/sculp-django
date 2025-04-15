@@ -3,8 +3,10 @@ services:
     name: sculp-django
     env: python
     buildCommand: |
+      buildCommand: |
       pip install -r requirements.txt
       python manage.py collectstatic --noinput
+      python manage.py migrate
     startCommand: gunicorn projeto_sculp.wsgi:application
     envVars:
       - key: DEBUG
