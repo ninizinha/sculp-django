@@ -43,6 +43,24 @@
 		  display: block;
 		  border-radius: 10px;
 		}
+		@media (max-width: 991.98px) {
+            .container-foto {
+              justify-content: flex-start !important;
+              text-align: center;
+              margin-top: 2rem;
+            }
+          
+            .foto {
+              
+              margin: 0 auto;
+            }
+          
+            .container-foto img {
+              max-width: 100%;
+              height: auto;
+              display: block;
+            }
+          }
 	  </style>
 	  
 	<body>
@@ -83,7 +101,7 @@
 					<div class="row justify-content-between">
 						<div class="col-lg-5">
 							<div class="intro-excerpt">
-								<h1>Tatuagens <span clsas="d-block">Temporárias</span></h1>
+								<h1>Tatuagens <span class="d-block">Temporárias</span></h1>
 								<p class="mb-4">Quer fazer uma tatuagem mas ainda não tem certeza de qual?   Aqui você encontra as melhores opções de tatuagem temporárias! Explore primeiro, faça depois.</p>
 								<p><a href="{% url 'shop' %}" class="btn btn-secondary me-2">Tatuagens</a><a href="#oqueeh" class="btn btn-white-outline">O que é?</a></p>
 							</div>

@@ -156,6 +156,37 @@ a {
       @media (min-width: 1200px) {
         .hero .hero-img-wrap:after {
           top: -40px; } }
+          .container-foto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          .container-foto img {
+            max-width: 100%;
+            height: auto;
+          }
+          
+          /* CENTRALIZA no mobile */
+          @media (max-width: 991.98px) {
+            .container-foto {
+              justify-content: flex-start !important;
+              text-align: center;
+              margin-top: 2rem;
+            }
+          
+            .foto {
+              max-width: 300px;
+              margin: 0 auto;
+            }
+          
+            .container-foto img {
+              max-width: 100%;
+              height: auto;
+              display: block;
+            }
+          }
+          
 
 .btn {
   font-weight: 600;
