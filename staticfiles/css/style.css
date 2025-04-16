@@ -538,7 +538,7 @@ a {
     z-index: 1;
     right: 0; }
     .footer-section .sofa-img img {
-      max-width: 380px; }
+      max-width: 300px; }
   .footer-section .links-wrap {
     margin-top: 0px; }
     @media (min-width: 992px) {
@@ -573,6 +573,7 @@ a {
 
 .untree_co-section {
   padding: 7rem 0; }
+  
 
 .form-control {
   height: 50px;
