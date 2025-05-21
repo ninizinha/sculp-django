@@ -10,7 +10,7 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(".")))
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "seu_projeto.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "projeto_sculp.settings")
 import django
 django.setup()
 
