@@ -77,7 +77,7 @@
 
 				<div class="collapse navbar-collapse" id="navbarsFurni">
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a class="nav-link" href="{% url 'index' %}">Início</a>
 
 						</li>
@@ -329,6 +329,32 @@
 		<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 		<script src="{% static 'js/tiny-slider.js' %}"></script>
 		<script src="{% static 'js/custom.js' %}"></script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+    // Remove a classe 'active' de todos os itens
+    const navItems = document.querySelectorAll('.custom-navbar-nav li, .custom-navbar-nav .nav-item');
+    navItems.forEach(item => item.classList.remove('active'));
+    
+    // Captura a URL atual e o hash
+    const currentPath = window.location.pathname;
+    const currentHash = window.location.hash;
+    const currentUrl = currentPath + currentHash;
+    
+    // Verifica cada link do menu
+    document.querySelectorAll('.custom-navbar-nav a.nav-link').forEach(link => {
+        const linkHref = link.getAttribute('href');
+        
+        // Comparação inteligente para links Django e âncoras
+        if (linkHref === currentUrl || 
+            linkHref === currentPath || 
+            (currentHash && linkHref.endsWith(currentHash)) ||
+            (currentPath === '/' && linkHref === "{% url 'index' %}")) {
+            link.parentElement.classList.add('active');
+        }
+    });
+});
+		</script>
 		
 	</body>
 

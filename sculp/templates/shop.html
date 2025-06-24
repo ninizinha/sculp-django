@@ -43,7 +43,7 @@
 
 				<div class="collapse navbar-collapse" id="navbarsFurni">
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item active">
+						<li class="nav-item ">
 							<a class="nav-link" href="{% url 'index' %}">Início</a>
 
 						</li>
@@ -197,6 +197,54 @@
 						</a>
 					</div>
 					<!-- End Column 4 -->
+					 <!-- Start Column 4 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5">
+						<a class="product-item" href="https://shopee.com.br/Tatuagem-Tempor%C3%A1ria-a-Prova-D'%C3%A1gua-Unisex-Realista-i.287679232.19571627631?sp_atk=81bc9ceb-808d-4090-87f1-3fea9978802c&xptdk=81bc9ceb-808d-4090-87f1-3fea9978802c">
+							<img src="/static/images/tatuagem48.png" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Tatuagem Lobo</h3>
+							<strong class="product-price">Clique aqui</strong>
+
+							<span class="icon-cross">
+								
+						</a>
+					</div>
+					<!-- End Column 4 -->
+					 <!-- Start Column 4 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5">
+						<a class="product-item" href="https://shopee.com.br/%C3%80-prova-d'%C3%A1gua-com-dura%C3%A7%C3%A3o-de-15-dias-chama-Phoenix-tatuagem-tempor%C3%A1ria-adesivo-bra%C3%A7o-tatuagem-falsa-tatuagem-semiperm-i.1006215031.26377218749?sp_atk=f014de28-1de4-4321-90dc-ebc890302ce0&xptdk=f014de28-1de4-4321-90dc-ebc890302ce0">
+							<img src="/static/images/tatuagem49.png" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Tatuagem Fenix</h3>
+							<strong class="product-price">Clique aqui</strong>
+
+							<span class="icon-cross">
+								
+						</a>
+					</div>
+					<!-- End Column 4 -->
+					 <!-- Start Column 4 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5">
+						<a class="product-item" href="https://shopee.com.br/Adesivos-de-tatuagem-de-ervas-Samurai-japon%C3%AAs-%C3%A0-prova-d'%C3%A1gua-duradouro-homens-mulheres-bra%C3%A7os-pernas-n%C3%A3o-reflexiv-i.1006215031.28927213480?sp_atk=4071ddde-b0f2-43cf-a649-9bc821433d40&xptdk=4071ddde-b0f2-43cf-a649-9bc821433d40">
+							<img src="/static/images/tatuagem50.png" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Tatuagem Samurai</h3>
+							<strong class="product-price">Clique aqui</strong>
+
+							<span class="icon-cross">
+								
+						</a>
+					</div>
+					<!-- End Column 4 -->
+					 <!-- Start Column 4 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5">
+						<a class="product-item" href="https://shopee.com.br/Adesivos-De-Tatuagem-%C3%80-Prova-D'%C3%A1gua-Para-Mulheres-%E2%80%93-Design-De-Falsos-Semipermanentes-Festas-E-Viagens-i.1006215031.25271159771?sp_atk=0a05901f-7da8-4b40-a54e-91d32d31cbba&xptdk=0a05901f-7da8-4b40-a54e-91d32d31cbba">
+							<img src="/static/images/tatuagem51.png" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Tatuagem Peixes</h3>
+							<strong class="product-price">Clique aqui</strong>
+
+							<span class="icon-cross">
+								
+						</a>
+					</div>
+					<!-- End Column 4 -->
 
 		      	</div>
 		    </div>
@@ -312,6 +360,31 @@
 <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 <script src="{% static 'js/tiny-slider.js' %}"></script>
 <script src="{% static 'js/custom.js' %}"></script>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+    // Remove a classe 'active' de todos os itens
+    const navItems = document.querySelectorAll('.custom-navbar-nav li, .custom-navbar-nav .nav-item');
+    navItems.forEach(item => item.classList.remove('active'));
+    
+    // Captura a URL atual e o hash
+    const currentPath = window.location.pathname;
+    const currentHash = window.location.hash;
+    const currentUrl = currentPath + currentHash;
+    
+    // Verifica cada link do menu
+    document.querySelectorAll('.custom-navbar-nav a.nav-link').forEach(link => {
+        const linkHref = link.getAttribute('href');
+        
+        // Comparação inteligente para links Django e âncoras
+        if (linkHref === currentUrl || 
+            linkHref === currentPath || 
+            (currentHash && linkHref.endsWith(currentHash)) ||
+            (currentPath === '/' && linkHref === "{% url 'index' %}")) {
+            link.parentElement.classList.add('active');
+        }
+    });
+});
+</script>
 
 	</body>
 
